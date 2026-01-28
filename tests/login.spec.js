@@ -8,7 +8,7 @@ test('@smoke Login exitoso', async ({ page }) => {
   await loginPage.navigate();
 
   // Paso 2: Ingresar credenciales de prueba
-  await loginPage.login('usuario_test', 'password_test');
+  await loginPage.login('administra-dor', 'pws');
 
   // Paso 3: Verificar redirección al dashboard
   await expect(page).toHaveURL(/dashboard/);
